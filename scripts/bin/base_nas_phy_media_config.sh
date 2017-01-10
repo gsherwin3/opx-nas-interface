@@ -12,5 +12,5 @@
 #
 # See the Apache Version 2.0 License for specific language governing
 # permissions and limitations under the License.
-export PYTHONPATH=/usr/lib/opx:/usr/lib/x86_64-linux-gnu/opx
-/usr/bin/python /usr/bin/base_nas_phy_media_config.py
+export PYTHONPATH=$OPX_INSTALL_PATH/usr/lib/opx:$OPX_INSTALL_PATH/usr/lib/x86_64-linux-gnu/opx
+$OPX_INSTALL_PATH/usr/bin/python $OPX_INSTALL_PATH/usr/bin/base_nas_phy_media_config.py
