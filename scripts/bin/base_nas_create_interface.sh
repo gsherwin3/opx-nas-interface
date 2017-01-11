@@ -13,7 +13,7 @@
 # See the Apache Version 2.0 License for specific language governing
 # permissions and limitations under the License.
 
-export PYTHONPATH=$OPX_INSTALL_PATH/usr/lib/opx:$OPX_INSTALL_PATH/usr/lib/x86_64-linux-gnu/opx
+export PYTHONPATH=$OPX_INSTALL_PATH/usr/lib/opx:$OPX_INSTALL_PATH/usr/lib/x86_64-linux-gnu/opx:$OPX_INSTALL_PATH/lib/python2.7/site-packages
 
 if [ -f $OPX_INSTALL_PATH/etc/opx/nas_if_nocreate ] ; then
    exit 0
