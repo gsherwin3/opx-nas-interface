@@ -15,6 +15,7 @@
 
 import threading
 
+import os
 import cps
 import cps_object
 import cps_utils
@@ -172,7 +173,7 @@ if __name__ == '__main__':
         nas_if.log_err('Media or front panel port object is not yet ready')
         time.sleep(1)
 
-    f = '/etc/opx/base_port_physical_mapping_table.xml'
+    f = '%s/etc/opx/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
     fp.init(f)
 
     if_thread = interfaceMonitorThread(1, "Interface event Monitoring Thread")
