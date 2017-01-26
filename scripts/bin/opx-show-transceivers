@@ -91,7 +91,8 @@ if __name__ == '__main__':
         sys.exit(1)
 
     opt = sys.argv[1]
-    f = '%s/etc/opx/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
+    #EXTREME_HACK f = '%s/etc/opx/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
+    f = '%s/etc/opx/nas/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
     fp.init(f)
     if opt == 'summary':
         display_media_inventory()
