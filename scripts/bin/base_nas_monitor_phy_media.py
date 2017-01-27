@@ -174,7 +174,8 @@ if __name__ == '__main__':
         time.sleep(1)
 
     #EXTREME_HACKf = '%s/etc/opx/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
-    f = '%s/etc/opx/nas/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
+    #EXTREME_HACKf = '%s/etc/opx/nas/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
+    f = '%s/etc/opx/dell-s6000/nas/base_port_physical_mapping_table.xml' % os.environ.get("OPX_INSTALL_PATH","")
     fp.init(f)
 
     if_thread = interfaceMonitorThread(1, "Interface event Monitoring Thread")
