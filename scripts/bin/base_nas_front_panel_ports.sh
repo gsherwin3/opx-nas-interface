@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Copyright (c) 2015 Dell Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
@@ -12,5 +12,7 @@
 #
 # See the Apache Version 2.0 License for specific language governing
 # permissions and limitations under the License.
-export PYTHONPATH=$OPX_INSTALL_PATH/usr/lib/opx:$OPX_INSTALL_PATH/usr/lib/x86_64-linux-gnu/opx:$OPX_INSTALL_PATH/lib/python2.7/site-packages
-$OPX_INSTALL_PATH/usr/bin/python $(dirname $0)/base_nas_front_panel_ports.py
+
+. $OPX_INSTALL_PATH/etc/opx/opx-environment.sh
+
+$OPX_INSTALL_PATH/usr/bin/base_nas_front_panel_ports.py
